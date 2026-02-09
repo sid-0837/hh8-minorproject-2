@@ -1,26 +1,38 @@
-# hh8-minorproject-2
-📌 On Windows or macOS Client
-### My IP: 10.20.10.11/24
-Address = 10.20.10.11/24
-### DNS Server
-DNS = 8.8.8.8, 8.8.4.4
+# 🔐 WireGuard VPN with Kill Switch (Windows)
 
-[Peer]
-###Public key of the WireGuard VPN Server
-### My PublicKey : w6DbLTAEixvrMD7ASyc0vaZakYDZ7vd71yC/b7ESmkI= 
-PublicKey = w6DbLTAEixvrMD7ASyc0vaZakYDZ7vd71yC/b7ESmkI=
+## 📌 Project Overview
+This project demonstrates the setup of a **secure WireGuard VPN tunnel** with a **Kill Switch (Key Switch) mechanism on Windows** to prevent data leakage if the VPN connection drops unexpectedly.
 
-### IP and Port of the WireGuard VPN Server
-### Syntax: IP:Port
-### My Server
-##### IP:43.224.33.183
-##### Port: 33333
-Endpoint = 43.224.33.183:33333
+The lab focuses on **privacy, secure tunneling, and traffic control**, ensuring that all network traffic is blocked unless the VPN tunnel is active.
 
-### Allow all traffic via VPN
-AllowedIPs = 0.0.0.0/0
+---
 
+## 🎯 Objectives
+- Configure a secure **WireGuard VPN tunnel**
+- Encrypt all outgoing and incoming traffic
+- Implement a **Kill Switch on Windows**
+- Prevent IP and DNS leaks when VPN disconnects
+- Understand low-level network routing and firewall rules
 
-📌 On WireGuard VPN Server
+---
 
-	wg set wg0 peer w6DbLTAEixvrMD7ASyc0vaZakYDZ7vd71yC/b7ESmkI= allowed-ips 10.20.10.11
+## 🛠️ Tools & Technologies Used
+- **WireGuard**
+- **Windows Defender Firewall**
+- **PowerShell**
+- **Linux (VPN Server)**
+- **Public / Private Key Cryptography**
+- **IPv4 Routing**
+
+---
+
+## 🧠 Key Concepts
+- VPN tunneling
+- Public–Private key authentication
+- Encrypted peer-to-peer communication
+- Firewall-based traffic filtering
+- Fail-safe network security (Kill Switch)
+
+---
+
+## 🏗️ Architecture
