@@ -34,5 +34,13 @@ The lab focuses on **privacy, secure tunneling, and traffic control**, ensuring 
 - Fail-safe network security (Kill Switch)
 
 ---
-
 ## 🏗️ Architecture
+
+[ Windows Client ]
+|
+| Encrypted Tunnel (WireGuard)
+|
+[ Linux VPN Server ]
+|
+|
+[ Internet ]
